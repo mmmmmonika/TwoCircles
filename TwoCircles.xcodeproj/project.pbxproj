@@ -11,6 +11,8 @@
 		FD0F5C7028F6139600588331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F5C6F28F6139600588331 /* ContentView.swift */; };
 		FD0F5C7228F6139B00588331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0F5C7128F6139B00588331 /* Assets.xcassets */; };
 		FD0F5C7628F6139B00588331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0F5C7528F6139B00588331 /* Preview Assets.xcassets */; };
+		FD0F5C7D28F6162800588331 /* TwoCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F5C7C28F6162800588331 /* TwoCircleVC.swift */; };
+		FD5DD1B728FE920D00326F19 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DD1B628FE920D00326F19 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		FD0F5C7128F6139B00588331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0F5C7328F6139B00588331 /* TwoCircles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwoCircles.entitlements; sourceTree = "<group>"; };
 		FD0F5C7528F6139B00588331 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD0F5C7C28F6162800588331 /* TwoCircleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCircleVC.swift; sourceTree = "<group>"; };
+		FD5DD1B628FE920D00326F19 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				FD0F5C7128F6139B00588331 /* Assets.xcassets */,
 				FD0F5C7328F6139B00588331 /* TwoCircles.entitlements */,
 				FD0F5C7428F6139B00588331 /* Preview Content */,
+				FD0F5C7C28F6162800588331 /* TwoCircleVC.swift */,
+				FD5DD1B628FE920D00326F19 /* CircleView.swift */,
 			);
 			path = TwoCircles;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5DD1B728FE920D00326F19 /* CircleView.swift in Sources */,
 				FD0F5C7028F6139600588331 /* ContentView.swift in Sources */,
 				FD0F5C6E28F6139600588331 /* TwoCirclesApp.swift in Sources */,
+				FD0F5C7D28F6162800588331 /* TwoCircleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +293,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.TwoCircles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +331,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.TwoCircles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
